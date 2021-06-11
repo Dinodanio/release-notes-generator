@@ -14,7 +14,7 @@ build:
   image: node
   script:
     - npm ci
-    - npm build
+    - npm run build
   artifacts:
     paths:
       - dist
