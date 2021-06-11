@@ -1,4 +1,5 @@
 # Release Notes Generator (RNG)
+![example workflow](https://github.com/Dinodanio/release-notes-generator/actions/workflows/.yml/badge.svg)
 
 ## DSL
 The merge commit description must contain specific schema to get parsed. 
