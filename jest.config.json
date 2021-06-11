@@ -2,5 +2,10 @@
   "preset": "ts-jest",
   "testEnvironment": "node",
   "collectCoverage": true,
-  "collectCoverageFrom": ["src/**/*.ts"]
+  "collectCoverageFrom": ["src/**/*.ts"],
+  "coverageReporters": [
+    "json-summary",
+    "text",
+    "lcov"
+  ]
 }
