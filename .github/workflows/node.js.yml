@@ -1,4 +1,4 @@
-name: Node.js CI
+name: RNG
 
 on:
   push:
@@ -16,8 +16,3 @@ jobs:
       run: |
         npm ci
         npm test
-    - name: Create Code Coverage Badge
-      uses: actions/upload-artifact@v2
-      with:
-        name: code-coverage-badge
-        path: coverage/badge.svg

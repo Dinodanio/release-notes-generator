@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest && make-coverage-badge",
     "start": "nodemon --watch src/** --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/",
-    "build": "rm -R -f dist && tsc -p tsconfig.build.json",
-    "docsify:start": "npx docsify serve docs"
+    "build": "rm -R -f dist && tsc -p tsconfig.build.json"
   },
   "author": "",
   "license": "ISC",
