@@ -3,13 +3,8 @@ stages:
   - build
   - deploy
 
-.base_template:
+unit-test:
   image: node
-
-test:
-  extends:
-    - '.base_template'
-  stage: test
   script:
     - npm ci
     - npm test
