@@ -1,0 +1,15 @@
+stages:
+  - test
+  - build
+  - deploy
+
+.base_template:
+  image: node
+
+test:
+  extends:
+    - '.base_template'
+  stage: test
+  script:
+    - npm ci
+    - npm test
