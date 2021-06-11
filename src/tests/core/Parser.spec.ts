@@ -1,5 +1,5 @@
 import * as mock from '../ressources/gitlab-merge-request.json';
-import {customerBugMatcher, functionalMatcher, nonFunctionalMatcher} from "../../core/Parser";
+import {customerBugMatcher, functionalMatcher, internalBugMatcher, nonFunctionalMatcher} from "../../core/Parser";
 
 describe('Parser', () => {
     it('should parse functional notes', () => {
@@ -18,6 +18,6 @@ describe('Parser', () => {
         expect(customerBugMatcher(mock.object_attributes.description).length).toBe(1);
     });
     it('should parse internal bug notes', () => {
-        expect(customerBugMatcher(mock.object_attributes.description).length).toBe(0);
+        expect(internalBugMatcher(mock.object_attributes.description).length).toBe(0);
     });
 });
