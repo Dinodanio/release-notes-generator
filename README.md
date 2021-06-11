@@ -1,5 +1,5 @@
 # Release Notes Generator (RNG)
-![example workflow](https://github.com/Dinodanio/release-notes-generator/actions/workflows/.yml/badge.svg)
+[![Node.js CI](https://github.com/Dinodanio/release-notes-generator/actions/workflows/node.js.yml/badge.svg)](https://github.com/Dinodanio/release-notes-generator/actions/workflows/node.js.yml)
 
 ## DSL
 The merge commit description must contain specific schema to get parsed. 
