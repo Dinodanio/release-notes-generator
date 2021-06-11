@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest && make-coverage-badge",
     "start": "nodemon --watch src/** --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/",
-    "build": "rm -R -f dist && tsc -p tsconfig.build.json"
+    "build": "rm -R -f dist && tsc -p tsconfig.build.json",
+    "docsify:start": "npx docsify serve docs"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "@types/jest": "^26.0.23",
     "@types/nedb": "^1.8.11",
     "@types/node": "^15.12.2",
+    "docsify-cli": "^4.4.3",
     "jest": "^27.0.4",
     "make-coverage-badge": "^1.2.0",
     "nodemon": "^2.0.7",
