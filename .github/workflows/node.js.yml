@@ -8,18 +8,21 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [15.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Test ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm test
+      run: |
+        npm ci
+        npm test
+    - name: Create Code Coverage Badge
+     uses: actions/upload-artifact@v2
+     with:
+       name: code-coverage-badge
+       path: coverage/badge.svg
