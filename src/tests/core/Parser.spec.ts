@@ -1,4 +1,4 @@
-import * as mock from '../ressources/gitlab-merge-request.json';
+import * as mock from '../resources/gitlab-merge-request.json';
 import {customerBugMatcher, functionalMatcher, internalBugMatcher, nonFunctionalMatcher} from "../../core/Parser";
 
 describe('Parser', () => {

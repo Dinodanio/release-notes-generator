@@ -1,12 +1,8 @@
 // tslint:disable:no-console
-export function log(message: any) {
-    console.log(message);
+export function log(content: any) {
+    console.log(content);
 }
 
-export function warn(message: any) {
-    console.warn(message);
-}
-
-export function error(message: any) {
-    console.error(message);
+export function error(content: any) {
+    console.error(content);
 }
