@@ -12,12 +12,11 @@ jobs:
         node-version: [ 15.x ]
 
     steps:
-      - uses: actions/checkout@v1
       - name: Prepare
-        run: git config --global --add user.email "rieser.daniel@gmail.com"
+        uses: actions/checkout@v2
       - name: Generate
         uses: tool3/docsify-action@v1.1
         with:
-          github_token: ${{ secrets.GP_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
 
