@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - name: Prepare
-          - run: git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
-      - name: docsify-action
+        run: git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      - name: Generate
         uses: tool3/docsify-action@v1.1
         with:
           github_token: ${{ secrets.GP_TOKEN }}
