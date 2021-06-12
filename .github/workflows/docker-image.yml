@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: RNG Docker Image
 
 on:
   push:
