@@ -12,6 +12,7 @@ jobs:
         node-version: [ 15.x ]
 
     steps:
+      - uses: actions/checkout@v1
       - name: Prepare
         run: git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
       - name: Generate
