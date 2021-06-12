@@ -1,5 +1,5 @@
 import {GitlabChangelog} from '../../changelog/GitlabChangelog';
-import * as mock from '../ressources/gitlab-merge-request.json';
+import * as mock from '../resources/gitlab-merge-request.json';
 
 describe('Gitlab changelog builder', () => {
    it('should build a gitlab changelog instance', () => {

@@ -1,5 +1,5 @@
 import {IProject} from "../types/IProject";
-import {db} from "../index";
+import {db} from "../app";
 
 export async function dbGet(projectId: number): Promise<IProject> {
     return new Promise(() => {
