@@ -16,6 +16,7 @@ jobs:
     steps:
     - name: docsify-action
       uses: tool3/docsify-action@v1.1
-      run: apt-get install ca-certificates
       with:
         github_token: ${{ secrets.GP_TOKEN }}
+        lfs: true
+        token: ${{ secrets.ACCESS_TOKEN }}
