@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --testTimeout=10000 && make-coverage-badge --output-path docs/assets/codecov.svg",
     "start": "nodemon --watch src/** --ext ts,json --ignore src/**/*.spec.ts --exec npx ts-node src/index.ts",
-    "build": "rm -R -f dist && tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "docs": "docsify serve docs"
   },
   "author": "",
