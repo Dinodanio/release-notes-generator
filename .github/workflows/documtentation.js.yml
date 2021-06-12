@@ -1,8 +1,6 @@
 name: RNG Documentation
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -18,5 +16,4 @@ jobs:
       uses: tool3/docsify-action@v1.1
       with:
         github_token: ${{ secrets.GP_TOKEN }}
-        lfs: true
-        token: ${{ secrets.ACCESS_TOKEN }}
+
