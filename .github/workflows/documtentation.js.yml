@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Prepare
-        run: git config --global user.email "rieser.daniel@gmail.com"
+        run: git config --global --add user.email "rieser.daniel@gmail.com"
       - name: Generate
         uses: tool3/docsify-action@v1.1
         with:
