@@ -12,8 +12,6 @@ jobs:
         node-version: [ 15.x ]
 
     steps:
-      - name: Prepare
-        uses: actions/checkout@v2
       - name: Generate
         uses: tool3/docsify-action@v1.1
         with:
