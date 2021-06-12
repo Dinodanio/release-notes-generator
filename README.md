@@ -1,5 +1,6 @@
 # Release Notes Generator (RNG)
 [![RNG](https://github.com/Dinodanio/release-notes-generator/actions/workflows/test.yml/badge.svg)](https://github.com/Dinodanio/release-notes-generator/actions/workflows/test.yml)
+[![RNG Docker Image](https://github.com/Dinodanio/release-notes-generator/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Dinodanio/release-notes-generator/actions/workflows/docker-image.yml)
 ![](docs/assets/codecov.svg)
 
 ## DSL
