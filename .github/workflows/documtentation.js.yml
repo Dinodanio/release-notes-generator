@@ -9,13 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [ 15.x ]
 
     steps:
-    - name: docsify-action
-      uses: tool3/docsify-action@v1.1
-      with:
-        github_token: ${{ secrets.GP_TOKEN }}
-      run: |
-        git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      - name: Prepare
+          - run: git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      - name: docsify-action
+        uses: tool3/docsify-action@v1.1
+        with:
+          github_token: ${{ secrets.GP_TOKEN }}
+
 
