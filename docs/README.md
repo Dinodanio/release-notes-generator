@@ -1,5 +1,4 @@
 # Release Notes Generator (RNG)
-[![Node.js CI](https://github.com/Dinodanio/release-notes-generator/actions/workflows/node.js.yml/badge.svg)](https://github.com/Dinodanio/release-notes-generator/actions/workflows/node.js.yml)
 ## What am I?
 I am a web server who provides some webhooks to generate your release notes in different formats. 
 I also provide them for you in several formats like `JSON` or `html`.
